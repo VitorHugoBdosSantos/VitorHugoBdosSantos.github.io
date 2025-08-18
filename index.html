@@ -160,17 +160,41 @@
       text-align: center;
       background-color: #1e6f9f;
       color: white;
-      padding: 40px 20px;
+      padding: 40px 20px 20px 20px;
     }
-    #contato a {
+    #contato p {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    .contato-botoes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+    .contato-botoes .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 6px;
+      background-color: #15597a;
       color: white;
-      margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s;
+      transition: background-color 0.3s, transform 0.2s;
+      font-size: 15px;
     }
-    #contato a:hover {
-      color: #ffd700;
+    .contato-botoes .btn:hover {
+      background-color: #ffd700;
+      color: #1e6f9f;
+      transform: translateY(-3px);
+    }
+
+    /* Rodapé final */
+    .rodape-final {
+      font-size: 14px;
+      color: #ddd;
+      margin-top: 10px;
     }
   </style>
 </head>
@@ -264,9 +288,17 @@
   <!-- Contato -->
   <footer id="contato">
     <h2>Contato</h2>
-    <p>Conecte-se comigo:</p>
-    <a href="https://www.linkedin.com/in/vitor-hugo-b68514340/" target="_blank">LinkedIn</a>
-    <a href="mailto:vitorhugo5588@gmail.com">E-mail</a>
+    <p>Clique nos botões abaixo para se conectar:</p>
+    <div class="contato-botoes">
+      <a href="https://www.linkedin.com/in/vitor-hugo-b68514340/" target="_blank" class="btn">LinkedIn</a>
+      <a href="mailto:vitorhugo5588@gmail.com" class="btn">E-mail</a>
+      <a href="curriculo.pdf" target="_blank" class="btn">Currículo</a>
+      <a href="certificados.pdf" target="_blank" class="btn">Certificados</a>
+      <a href="tel:+5511999999999" class="btn">Telefone</a>
+    </div>
+    <div class="rodape-final">
+      © 2025 Vitor Hugo B Dos Santos. Todos os direitos reservados.
+    </div>
   </footer>
 
   <!-- Script de animação ao rolar -->
